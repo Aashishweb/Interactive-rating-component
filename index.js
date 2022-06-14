@@ -1,11 +1,6 @@
 
 
-// function func(li){
-//   console.log("click")
-//   // 
-//   // selectedRating.innerText = "java"
 
-// }
 const submitBtn = document.getElementById("submit");
 let selectedRating = document.getElementById("selected-num")
 console.log(selectedRating)
