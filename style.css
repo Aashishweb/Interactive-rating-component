@@ -1,0 +1,191 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    --Orange: hsl(25,97%,53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+
+
+body{
+    background-color: var(--VeryDarkBlue);
+    font-family: 'Overpass', sans-serif;
+}
+
+
+/* Main page styling start here */
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh; 
+}
+
+.container{
+    max-width: 420px;
+    height: auto;
+    background-color: var(--DarkBlue);
+    padding: 20px 20px;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container #submit{
+    display: block;
+    margin: 0 auto;
+}
+
+.circle-img{
+    background-color: #303c47;
+    border-radius:- 20px;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius:50%;
+    display:inline-block;
+    padding:10px;
+}
+
+img{
+   display: block;
+}
+
+
+.container h1 {
+    
+    font-weight: 700;
+    color: var(--White);
+
+}
+
+.container p{
+    color: rgb(196, 196, 196);
+}
+
+/* ratting button styling */
+
+.rating-buttons {
+    padding-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+
+
+
+/* Rating button style */
+
+
+.container ul li{
+    display: inline-block;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 6px;
+    background:#303c47;
+    color: rgb(196, 196, 196);
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;    
+}
+
+.container ul li:hover{
+    background-color: var(--LightGrey);
+    color: var(--White);
+}
+
+#submit{
+    border: none;
+    background-color: var(--Orange);
+    padding: 10px 90px;
+    border-radius: 25px;
+    text-align: center;
+    color: var(--White);
+    font-weight: 700;
+    letter-spacing: 2px;
+    
+}
+
+#submit:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+    
+}
+
+/* Main page End here */
+
+
+
+
+/* Thankyou Page layout */
+
+.main-thankyou{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.container-thankyou{
+    max-width: 420px;
+    height: auto;
+    background-color: var(--DarkBlue);
+    padding: 25px 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container-thankyou img{
+    margin: 0 auto;
+}
+
+/* rating number style for out of  */
+
+.container-thankyou .rating-num p{
+    background-color: #303c47;
+    margin: 10px auto;
+    width:  170px;
+    padding: 5px 5px;
+    border-radius: 15px;
+    color: var(--Orange);
+    font-size: 15px;
+}
+
+.active-thankyou-remove{ 
+    
+    display: none;
+}
+
+
+/* rating background change */
+
+  .container .rating-buttons .selected{
+    
+    background: var(--Orange);
+}
+
+
+
+
+.container-thankyou  h1{
+    color: var(--White);
+    
+}
+
+.container-thankyou p{
+    color: var(--LightGrey);
+}
